@@ -1,0 +1,15 @@
+First Name: <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default"
+                   ng-model="user.first_name"><br>
+Last Name: <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default"
+                  ng-model="user.last_name"><br>
+Address: <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default"
+                ng-model="user.add"><br>
+City: <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default"
+             ng-model="user.city"><br>
+State: <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default"
+              ng-model="user.state"><br>
+<a class="btn btn-primary" role="button" ng-click="add_customer()">Add</a>
+<br><br>
+<p>
+    <mark style="color: red;" ng-disabled="form_error">{{form_error}}</mark>
+</p>

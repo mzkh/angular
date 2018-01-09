@@ -1,0 +1,28 @@
+<html>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <style>
+        body{
+            width: 75%;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
+    <script src="app.js"></script>
+</head>
+<body>
+<div class="header"><h1>Customer Management Website</h1></div>
+<br><br>
+<div ng-app="customer_manager" ng-controller="customer_list">
+    <h2><a class="btn btn-primary" role="button" href="#/!">Customer List</a></h2>
+    <a role="button" class="btn btn-primary"href="#!add">Add Customer</a>
+    <br><br>
+
+    <div ng-view></div>
+</div>
+</body>
+</html>
